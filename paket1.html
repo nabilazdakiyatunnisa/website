@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>WEB SAYA</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+        <!-- Home bar -->
+        <div class="container-navbar">
+         <ul class="ul-navbar">
+            <li class="li-navbar">
+                <a href="index.html" class="a-navbar">HOME</a></li>
+                <li class="li-navbar">
+                    <a href="shop.html" class="a-navbar">SHOP</a></li>
+            <li class="li-navbar">
+                <a href="blog.html" class="a-navbar">BLOG</a></li>
+            <li class="li-navbar">
+                <a href="about.html" class="a-navbar">ABOUT US</a>
+            </li>
+            <li class="li-navbar">
+                <a href="contact.html" class="a-navbar">CONTACT US</a></li>
+                <li class="li-navbar">
+                    <a href="keranjang.html" class="a-navbar">KERANJANG</a></li>
+         </ul>
+        </div>
+        <!-- home bar selesai -->
+
+        <!-- blog bar -->
+
+        
+        <!-- <div class=""></div> -->
+    
+        <div class="image-container1">
+            <a href="paket1.html"> <img src="serser.jpeg" alt="Foto 1"></a>
+          </div>
+<div  class="product-container1">
+                  <td><h2>Paket 5Pcs Hydrating Face Serum<Serum></h2>
+                </td>
+              
+                  <td>
+                      <p>
+                        Felis one Hidrate face serum tujuan memberikan nutrisi <br> tambahan pada kulit,
+                        agar perawatan kulit lebih maksimal lagi.<br>Felis one Hidrate Serum Serum 
+                         mampumencerahkan kulit,<br>  dan memberikan kelembapanserta mengunci kelembapan <br>
+                         kulit sehingga membuat kulit tampak lebih cerah,<br> plumpy dan juga sehat. <br>
+                         <br>
+                         <h2>RP.126.000</h2>
+                      </p>
+                  </td>
+              </tr>
+            
+              </div>
+            
+              <div class="product-container">
+        <h2>Hydrating Face Serum</h2>
+        <div class="quantity">
+          <button class="button" onclick="decreaseQuantity()">-</button>
+          <span class="quantity-display" id="quantity">0</span>
+          <button class="button" onclick="increaseQuantity()">+</button>
+        </div>
+        <a href="keranjang.html"><button class="button cart-button" onclick="addToCart()">Tambah ke Keranjang</button></a> 
+        <a href="buy.html"><button class="button" onclick="buyNow()">Beli Sekarang</button></a>
+      </div>
+    
+      <script>
+        let currentQuantity = 0;
+    
+        function increaseQuantity() {
+          currentQuantity++;
+          updateQuantityDisplay();
+        }
+    
+        function decreaseQuantity() {
+          if (currentQuantity > 0) {
+            currentQuantity--;
+            updateQuantityDisplay();
+          }
+        }
+    
+        function updateQuantityDisplay() {
+          document.getElementById('quantity').innerText = currentQuantity;
+        }
+    
+        function addToCart() {
+          alert(`Produk telah ditambahkan ke keranjang dengan jumlah ${currentQuantity}`);
+          resetQuantity();
+        }
+    
+        function buyNow() {
+          alert(`Terimakasih! Anda telah membeli ${currentQuantity} produk.`);
+          resetQuantity();
+        }
+    
+        function resetQuantity() {
+          currentQuantity = 0;
+          updateQuantityDisplay();
+        }
+      </script>
+    
+   
+    
+<!-- blog bar end -->
+        <!-- blog bar end -->
+      
+        <!-- about bar -->
+        <!-- <div class="container-footer">
+            <h1 class="h1-footer"><p>Terimakasih Sudah Berukunjung</p></h1>
+        
+
+        </div> -->
+        <!-- about end -->
+
+        <!-- contact bar -->
+        <div>
+
+        </div>
+        <!-- contact end -->
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>WEB SAYA</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+        <!-- Home bar -->
+        <div class="container-navbar">
+         <ul class="ul-navbar">
+            <li class="li-navbar">
+                <a href="index.html" class="a-navbar">HOME</a></li>
+                <li class="li-navbar">
+                    <a href="shop.html" class="a-navbar">SHOP</a></li>
+            <li class="li-navbar">
+                <a href="blog.html" class="a-navbar">BLOG</a></li>
+            <li class="li-navbar">
+                <a href="about.html" class="a-navbar">ABOUT US</a>
+            </li>
+            <li class="li-navbar">
+                <a href="contact.html" class="a-navbar">CONTACT US</a></li>
+                <li class="li-navbar">
+                    <a href="keranjang.html" class="a-navbar">KERANJANG</a></li>
+         </ul>
+        </div>
+        <!-- home bar selesai -->
+
+        <!-- blog bar -->
+
+        
+        <!-- <div class=""></div> -->
+    
+        <div class="image-container1">
+            <a href="paket2.html"> <img src="lolot.jpeg" alt="Foto 1"></a>
+          </div>
+<div  class="product-container1">
+                  <td><h2>Paket 5 Pcs whitening body serum<Serum></h2>
+                </td>
+              
+                  <td>
+                      <p>
+                        <p>
+                            Felis one Body Serum Merupakan serum yang bermanfaat untuk<br> memutihkan 
+                            dan mencerahkan kulit tubuh dari dalam dan luar dan <br>menjadikan tampak
+                            bersih karena kandungan DNA SALMON COLLAGEN<br> dan Niacinamide dan gluthatione 
+                            UV protection.Yaitu yang berfungsi<br> sebagai SunBlock yang akan melindungi  dari sinar UV & Radikal bebas.
+                         <br>
+                         <br>
+                         <h2>RP.670.000</h2>
+                      </p>
+                  </td>
+              </tr>
+            
+              </div>
+            
+              <div class="product-container">
+        <h2> Whitening Body Serum</h2>
+        <div class="quantity">
+          <button class="button" onclick="decreaseQuantity()">-</button>
+          <span class="quantity-display" id="quantity">0</span>
+          <button class="button" onclick="increaseQuantity()">+</button>
+        </div>
+        <a href="keranjang.html"><button class="button cart-button" onclick="addToCart()">Tambah ke Keranjang</button></a> 
+        <a href="buy.html"><button class="button" onclick="buyNow()">Beli Sekarang</button></a>
+      </div>
+    
+      <script>
+        let currentQuantity = 0;
+    
+        function increaseQuantity() {
+          currentQuantity++;
+          updateQuantityDisplay();
+        }
+    
+        function decreaseQuantity() {
+          if (currentQuantity > 0) {
+            currentQuantity--;
+            updateQuantityDisplay();
+          }
+        }
+    
+        function updateQuantityDisplay() {
+          document.getElementById('quantity').innerText = currentQuantity;
+        }
+    
+        function addToCart() {
+          alert(`Produk telah ditambahkan ke keranjang dengan jumlah ${currentQuantity}`);
+          resetQuantity();
+        }
+    
+        function buyNow() {
+          alert(`Terimakasih! Anda telah membeli ${currentQuantity} produk.`);
+          resetQuantity();
+        }
+    
+        function resetQuantity() {
+          currentQuantity = 0;
+          updateQuantityDisplay();
+        }
+      </script>
+    
+   
+    
+<!-- blog bar end -->
+        <!-- blog bar end -->
+      
+        <!-- about bar -->
+        <!-- <div class="container-footer">
+            <h1 class="h1-footer"><p>Terimakasih Sudah Berukunjung</p></h1>
+        
+
+        </div> -->
+        <!-- about end -->
+
+        <!-- contact bar -->
+        <div>
+
+        </div>
+        <!-- contact end -->
+    </div>
+    </body>
+    </html>
